@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student: Adrianna Dar
+       Student ID: S1712623
+       Date: 18/08/2020 Trimester C
+       Mobile Platform Development Assignment Resit
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adar_s1712623_mpd.StartScreen"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal"
+    >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Platform Development Assignment 2020"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingTop="40dp"
+        android:layout_gravity="top"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sun1"
+        android:padding="@dimen/cardview_default_elevation"
+        android:fadingEdge="horizontal"
+        android:layout_gravity="top"
+        android:layout_margin="65dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GCU Weather Forecast App Adrianna Dar S1712623"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:layout_gravity="bottom"/>
+
+
+
+
+</FrameLayout>
+
+
+
+
+</LinearLayout>

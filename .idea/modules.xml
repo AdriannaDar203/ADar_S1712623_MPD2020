@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ADar_S1712623_MPD.iml" filepath="$PROJECT_DIR$/.idea/modules/ADar_S1712623_MPD.iml" group="ADar_S1712623_MPD" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ADar_S1712623_MPD/app" />
+    </modules>
+  </component>
+</project>

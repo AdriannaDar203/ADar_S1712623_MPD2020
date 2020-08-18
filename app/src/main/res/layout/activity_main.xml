@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student: Adrianna Dar
+       Student ID: S1712623
+       Date: 18/08/2020 Trimester C
+       Mobile Platform Development Assignment Resit
+-->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.adar_s1712623_mpd.MainActivity"
+    tools:openDrawer="start"
+    android:background="@color/Yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Yellow">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/toolbar"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+           >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/rGla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Glasgow"
+                android:textColor="@color/Yellow"
+                android:buttonTint="@color/Yellow"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rLdn"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London"
+                android:textColor="@color/Yellow"
+                android:buttonTint="@color/Yellow"
+                android:layout_toRightOf="@+id/rGla"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/rMau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mauritius"
+                android:checked="false"
+                android:textColor="@color/Yellow"
+                android:buttonTint="@color/Yellow"
+                android:layout_toRightOf="@+id/rLdn"
+
+                />
+
+                <RadioButton
+                    android:id="@+id/rOman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oman"
+                    android:checked="false"
+                    android:textColor="@color/Yellow"
+                    android:buttonTint="@color/Yellow"
+                    android:layout_below="@+id/rGla"
+
+                    />
+
+
+
+
+                <RadioButton
+                    android:id="@+id/rBan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bangladesh"
+                    android:textColor="@color/Yellow"
+                    android:buttonTint="@color/Yellow"
+                    android:layout_below="@+id/rLdn"
+                    android:checked="false"
+                    android:layout_toRightOf="@+id/rOman"
+
+                    />
+
+
+
+                <RadioButton
+                    android:id="@+id/rNY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New York"
+                    android:checked="false"
+                    android:textColor="@color/Yellow"
+                    android:buttonTint="@color/Yellow"
+                    android:layout_below="@+id/rMau"
+                    android:layout_toRightOf="@+id/rBan"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+        </RadioGroup>
+
+
+
+
+       <ViewFlipper android:id="@+id/ViewFlipper01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         >
+
+
+            <ListView
+                android:id="@+id/GlasgowList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/colorPrimaryDark"
+                android:dividerHeight="10dp"
+                android:listSelector="@android:color/holo_blue_light"
+                android:background="@color/Yellow"
+                >
+            </ListView>
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/LondonList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorPrimaryDark"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@android:color/holo_blue_light"
+                    android:background="@color/Yellow"
+                    >
+                </ListView>
+
+            </android.support.constraint.ConstraintLayout>
+
+           <android.support.constraint.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/MauritiusList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorPrimaryDark"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@android:color/holo_blue_light"
+                    android:background="@color/Yellow"
+                    >
+                </ListView>
+           </android.support.constraint.ConstraintLayout>
+
+           <android.support.constraint.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/OmanList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorPrimaryDark"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@android:color/holo_blue_light"
+                    android:background="@color/Yellow"
+                    >
+                </ListView>
+            </android.support.constraint.ConstraintLayout>
+
+           <android.support.constraint.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ListView
+                   android:id="@+id/BangladeshList"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:divider="@color/colorPrimaryDark"
+                   android:dividerHeight="10dp"
+                   android:listSelector="@android:color/holo_blue_light"
+                   android:background="@color/Yellow"
+                   >
+               </ListView>
+           </android.support.constraint.ConstraintLayout>
+
+           <android.support.constraint.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ListView
+                   android:id="@+id/NewYorkList"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:divider="@color/colorPrimaryDark"
+                   android:dividerHeight="10dp"
+                   android:listSelector="@android:color/holo_blue_light"
+                   android:background="@color/Yellow"
+                   >
+               </ListView>
+           </android.support.constraint.ConstraintLayout>
+        </ViewFlipper>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        android:background="@color/Yellow"
+       />
+</android.support.v4.widget.DrawerLayout>

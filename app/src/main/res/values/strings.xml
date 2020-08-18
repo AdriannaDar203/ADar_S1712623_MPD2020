@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ADar_S1712623_MPD</string>
+    <string name="oman">Oman</string>
+    <string name="newyork">New York</string>
+    <string name="london">London</string>
+    <string name="glasgow">Glasgow</string>
+    <string name="mauritius">Mauritius</string>
+    <string name="bangladesh">Bangladesh</string>
+    <string name="show_weather_forecast_for">"Show forecast for: "</string>
+    <string name="gcu_locations_forecast_in_one_place">GCU Locations Weather Forecast</string>
+    <string name="logo">"Logo "</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+</resources>

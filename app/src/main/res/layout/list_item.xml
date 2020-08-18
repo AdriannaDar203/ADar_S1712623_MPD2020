@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student: Adrianna Dar
+       Student ID: S1712623
+       Date: 18/08/2020 Trimester C
+       Mobile Platform Development Assignment Resit
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+
+            android:layout_margin="25dp"
+            >
+
+            <TextView
+                android:id="@+id/txtItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:background="@color/Blue"
+
+                />
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>
